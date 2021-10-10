@@ -1,0 +1,24 @@
+{
+  "name": "js-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dio0425/js-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dio0425/js-test/issues"
+  },
+  "homepage": "https://github.com/dio0425/js-test#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
