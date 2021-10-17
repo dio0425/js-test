@@ -97,3 +97,28 @@ import random from "./getRandom";
 
 // Falsy(거짓 같은 값)
 // false, '', null, undefined, 0, -0, NaN
+
+// 함수
+
+// function sum(x, y) {
+//   return x + y;
+// }
+
+// const a = sum(1, 3);
+// const b = sum(4, 12);
+
+// console.log(a);
+// console.log(b);
+
+// 화살표 함수
+// () => {} vs function () {}
+
+// const double = function (x) {
+//   return x * 2;
+// };
+// console.log("double: ", double(7));
+
+// const doubleArrow = (x) => {
+//   return x * 2;
+// };
+// console.log("doubleArrow", doubleArrow(7));
