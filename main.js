@@ -180,3 +180,12 @@ import random from "./getRandom";
 // timeout(() => {
 //   console.log("Done!");
 // });
+
+function User(first, last) {
+  this.firstName = first;
+  this.lastNmae = last;
+}
+
+const ruri = new User("Lee", "ruri");
+
+console.log(ruri);
