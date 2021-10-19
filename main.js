@@ -122,3 +122,61 @@ import random from "./getRandom";
 //   return x * 2;
 // };
 // console.log("doubleArrow", doubleArrow(7));
+
+// 즉시실행함수
+// IIFE, Immediately-Invoker Function Expression
+
+// const a = 7;
+
+// function double() {
+//   console.log(a * 2);
+// }
+// double();
+
+// (function () {
+//   console.log(a * 2);
+// })();
+
+// (function () {
+//   console.log(a * 2);
+// })();
+
+// 호이스팅(Hoistion)
+// 함수 선언부가 유효범위 최상단으로 끌어올려지는 현상
+
+// const a = 7;
+
+// double();
+
+// function double() {
+//   console.log(a * 7);
+// }
+
+// 타이머 함수
+// setTimeout(함수, 시간) : 일정 시간 후 함수 실행
+// setInterval(함수, 시간) : 시간 간격마다 함수 실행
+// clearTimeout() : 설정된 Timeout 함수를 종료
+// clearInterval() : 설정된 Interval 함수를 종료
+
+// const timer = setInterval(function () {
+//   console.log("RuRi!");
+// }, 3000);
+
+// const h1El = document.querySelector("h1");
+// h1El.addEventListener("click", function () {
+//   clearInterval(timer);
+// });
+
+// 콜백(Callback)
+// 함수의 인수로 사용되는 함수
+
+// function timeout(cb) {
+//   setTimeout(() => {
+//     console.log("RuRi!");
+//     cb();
+//   }, 3000);
+// }
+
+// timeout(() => {
+//   console.log("Done!");
+// });
