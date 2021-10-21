@@ -181,11 +181,83 @@ import random from "./getRandom";
 //   console.log("Done!");
 // });
 
-function User(first, last) {
-  this.firstName = first;
-  this.lastNmae = last;
+//생성자 함수(prototype)
+// function User(first, last) {
+//   this.firstName = first;
+//   this.lastNmae = last;
+// }
+
+// User.prototype.getFullName = function () {
+//   return this.firstName;
+// };
+
+// const ruri = new User("Lee", "ruri");
+
+// console.log(ruri.getFullName());
+
+// this
+// 일반(Normal) 함수는 호출 위치에 따라서 this 정의
+// 화살표(Arrow) 함수는 자신이 선언된 함수 범위에서 this 정의
+
+// function User(name) {
+//   this.name = name;
+// }
+
+// User.prototype.normal = function () {
+//   console.log(this.name);
+// };
+
+// User.prototype.arrow = () => {
+//   console.log(this.name);
+// };
+
+// const ruri = new User("ruri!");
+
+// ruri.normal();
+// ruri.arrow(); // 에러
+
+// ES6 Classes
+
+// class User {
+//   constructor(first, last) {
+//     this.firstNmae = first;
+//     this.lastName = last;
+//   }
+//   getFullName() {
+//     return `${this.firstNmae} ${this.lastName} `;
+//   }
+// }
+
+// const ruri = new User("ruri", "Lee");
+
+// console.log(ruri.getFullName());
+
+//상속
+class Vehicle {
+  constructor(name, wheel) {
+    this.name = name;
+    this.wheel = wheel;
+  }
 }
 
-const ruri = new User("Lee", "ruri");
+const myVehicle = new Vehicle("운송수단", "2");
+console.log(myVehicle);
 
-console.log(ruri);
+class Bicycle extends Vehicle {
+  constructor(name, wheel) {
+    super(name, wheel);
+  }
+}
+
+const myBicycle = new Bicycle("자전거", 2);
+console.log(myBicycle);
+
+class car extends Bicycle {
+  constructor(name, wheel, license) {
+    super(name, wheel);
+    this.license = license;
+  }
+}
+
+const myCar = new car("람보르기니", 4, true);
+console.log(myCar);
