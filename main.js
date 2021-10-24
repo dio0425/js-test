@@ -233,31 +233,50 @@ import random from "./getRandom";
 // console.log(ruri.getFullName());
 
 //상속
-class Vehicle {
-  constructor(name, wheel) {
-    this.name = name;
-    this.wheel = wheel;
-  }
-}
+// class Vehicle {
+//   constructor(name, wheel) {
+//     this.name = name;
+//     this.wheel = wheel;
+//   }
+// }
 
-const myVehicle = new Vehicle("운송수단", "2");
-console.log(myVehicle);
+// const myVehicle = new Vehicle("운송수단", "2");
+// console.log(myVehicle);
 
-class Bicycle extends Vehicle {
-  constructor(name, wheel) {
-    super(name, wheel);
-  }
-}
+// class Bicycle extends Vehicle {
+//   constructor(name, wheel) {
+//     super(name, wheel);
+//   }
+// }
 
-const myBicycle = new Bicycle("자전거", 2);
-console.log(myBicycle);
+// const myBicycle = new Bicycle("자전거", 2);
+// console.log(myBicycle);
 
-class car extends Bicycle {
-  constructor(name, wheel, license) {
-    super(name, wheel);
-    this.license = license;
-  }
-}
+// class car extends Bicycle {
+//   constructor(name, wheel, license) {
+//     super(name, wheel);
+//     this.license = license;
+//   }
+// }
 
-const myCar = new car("람보르기니", 4, true);
-console.log(myCar);
+// const myCar = new car("람보르기니", 4, true);
+// console.log(myCar);
+
+// 문자
+const a = "Hello world!".indexOf("world!");
+console.log(a);
+
+const b = "ruri";
+console.log(b.length);
+
+const str = "Hello World!";
+console.log(str.slice(6, 11));
+
+const c = "Hello World!";
+console.log(c.replace("World!", "ruri"));
+
+const d = "hoon37388@naver.com";
+console.log(d.match(/.+(?=@)/)[0]);
+
+const e = " Hello World!  ";
+console.log(c.trim());
