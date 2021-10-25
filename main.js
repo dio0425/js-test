@@ -263,20 +263,35 @@ import random from "./getRandom";
 // console.log(myCar);
 
 // 문자
-const a = "Hello world!".indexOf("world!");
-console.log(a);
+// const a = "Hello world!".indexOf("world!");
+// console.log(a);
 
-const b = "ruri";
-console.log(b.length);
+// const b = "ruri";
+// console.log(b.length);
 
-const str = "Hello World!";
-console.log(str.slice(6, 11));
+// const str = "Hello World!";
+// console.log(str.slice(6, 11));
 
-const c = "Hello World!";
-console.log(c.replace("World!", "ruri"));
+// const c = "Hello World!";
+// console.log(c.replace("World!", "ruri"));
 
-const d = "hoon37388@naver.com";
-console.log(d.match(/.+(?=@)/)[0]);
+// const d = "hoon37388@naver.com";
+// console.log(d.match(/.+(?=@)/)[0]);
 
-const e = " Hello World!  ";
-console.log(c.trim());
+// const e = "   Hello World!  ";
+// console.log(c.trim());
+
+//숫자와 수학
+
+const pi = 3.13159265358979;
+console.log(pi);
+
+const str = pi.toFixed(2);
+console.log(str);
+console.log(typeof str);
+
+const integer = parseInt(str);
+const float = parseFloat(str);
+console.log(integer);
+console.log(float);
+console.log(typeof integer, typeof float);
