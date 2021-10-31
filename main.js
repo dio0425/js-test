@@ -283,29 +283,37 @@ import random from "./getRandom";
 
 //숫자와 수학
 
-const pi = 3.13159265358979;
-console.log(pi);
+// const pi = 3.13159265358979;
+// console.log(pi);
 
-const str = pi.toFixed(2);
-console.log(str);
-console.log(typeof str);
+// const str = pi.toFixed(2);
+// console.log(str);
+// console.log(typeof str);
 
-const integer = parseInt(str);
-const float = parseFloat(str);
-console.log(integer);
-console.log(float);
-console.log(typeof integer, typeof float);
+// const integer = parseInt(str);
+// const float = parseFloat(str);
+// console.log(integer);
+// console.log(float);
+// console.log(typeof integer, typeof float);
 
-console.log("abs: ", Math.abs(-12));
+// console.log("abs: ", Math.abs(-12));
 
-console.log("min: ", Math.min(2, 8));
+// console.log("min: ", Math.min(2, 8));
 
-console.log("max: ", Math.max(2, 8));
+// console.log("max: ", Math.max(2, 8));
 
-console.log("ceil: ", Math.ceil(3.54));
+// console.log("ceil: ", Math.ceil(3.54));
 
-console.log("floor: ", Math.floor(3.54));
+// console.log("floor: ", Math.floor(3.54));
 
-console.log("round: ", Math.round(3.54));
+// console.log("round: ", Math.round(3.54));
 
-console.log("random: ", Math.random());
+// console.log("random: ", Math.random());
+
+// 객체
+
+const numbers = [1, 2, 3, 4];
+const fruits = ["Apple", "Banana", "Cherry"];
+
+console.log(numbers[1]);
+console.log(fruits[2]);
