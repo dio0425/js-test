@@ -315,5 +315,19 @@ import random from "./getRandom";
 const numbers = [1, 2, 3, 4];
 const fruits = ["Apple", "Banana", "Cherry"];
 
-console.log(numbers[1]);
-console.log(fruits[2]);
+// console.log(numbers[1]);
+// console.log(fruits[2]);
+
+// console.log(numbers.length);
+// console.log(fruits.length);
+// console.log([1, 2].length);
+
+// console.log([].length);
+
+console.log(numbers.concat(fruits));
+console.log(numbers);
+console.log(fruits);
+
+fruits.forEach(function (element, index, array) {
+  console.log(element, index, array);
+});
