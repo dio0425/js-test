@@ -324,10 +324,25 @@ const fruits = ["Apple", "Banana", "Cherry"];
 
 // console.log([].length);
 
-console.log(numbers.concat(fruits));
-console.log(numbers);
-console.log(fruits);
+// console.log(numbers.concat(fruits));
+// console.log(numbers);
+// console.log(fruits);
 
-fruits.forEach(function (element, index, array) {
-  console.log(element, index, array);
+// fruits.forEach(function (element, index, array) {
+//   console.log(element, index, array);
+// });
+
+// .map()
+
+const numbers = [1, 2, 3, 4];
+const fruits = ["Apple", "Banana", "Cherry"];
+
+const a = fruits.foreach(function (fruits, index) {
+  console.log(`${fruit}-${index}`);
 });
+console.log(a);
+
+const b = fruits.map(function (fruit, index) {
+  return `${fruit}-${index}`;
+});
+console.log(b);
