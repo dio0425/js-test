@@ -312,8 +312,8 @@ import random from "./getRandom";
 
 // 객체
 
-const numbers = [1, 2, 3, 4];
-const fruits = ["Apple", "Banana", "Cherry"];
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
 
 // console.log(numbers[1]);
 // console.log(fruits[2]);
@@ -332,17 +332,96 @@ const fruits = ["Apple", "Banana", "Cherry"];
 //   console.log(element, index, array);
 // });
 
+// .foreach()
 // .map()
+
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// const a = fruits.foreach(function (fruits, index) {
+//   console.log(`${fruit}-${index}`);
+// });
+// console.log(a);
+
+// const b = fruits.map(function (fruit, index) {
+//   return {
+//     id: index,
+//     name: fruit,
+//   };
+// });
+// console.log(b);
+
+// .filter()
+
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// const a = numbers.map((number) => {
+//   return number < 3;
+// });
+// console.log(a);
+
+// const b = numbers.filter((number) => {
+//   return number < 3;
+// });
+// console.log(b);
+
+// .find() .findIndex()
+
+// const number = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// const a = fruits.find((fruit) => {
+//   return /^B/.test(fruit);
+// });
+// console.log(a);
+
+// const b = fruits.findIndex((fruit) => {
+//   return /^B/.test(fruit);
+// });
+// console.log(b);
+
+// .includes()
+
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// const a = numbers.includes(3);
+// console.log(a);
+
+// const b = fruits.includes("ruri");
+// console.log(b);
+
+// .push() .unshift()
+// 원본 수정됨 주의!
+
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// numbers.push(5);
+// console.log(numbers);
+
+// numbers.unshift(4);
+// console.log(numbers);
+
+// .reverse()
+// 원본 수정됨 주의!
+
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
+
+// numbers.reverse();
+// fruits.reverse();
+
+// console.log(numbers);
+// console.log(fruits);
+
+// .splice()
+// 원본 수정됨 주의!
 
 const numbers = [1, 2, 3, 4];
 const fruits = ["Apple", "Banana", "Cherry"];
 
-const a = fruits.foreach(function (fruits, index) {
-  console.log(`${fruit}-${index}`);
-});
-console.log(a);
+numbers.splice(2, 1);
 
-const b = fruits.map(function (fruit, index) {
-  return `${fruit}-${index}`;
-});
-console.log(b);
+console.log(numbers);
