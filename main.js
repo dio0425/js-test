@@ -419,9 +419,29 @@ import random from "./getRandom";
 // .splice()
 // 원본 수정됨 주의!
 
-const numbers = [1, 2, 3, 4];
-const fruits = ["Apple", "Banana", "Cherry"];
+// const numbers = [1, 2, 3, 4];
+// const fruits = ["Apple", "Banana", "Cherry"];
 
-numbers.splice(2, 1);
+// numbers.splice(2, 1);
 
-console.log(numbers);
+// console.log(numbers);
+
+const userAge = {
+  // key : value
+  name: "Heropy",
+  age: 85,
+};
+
+const userEmail = {
+  name: "Heropy",
+  email: "hoon37388@naver.com",
+};
+
+const target = Object.assign({}, userAge, userEmail);
+console.log(userAge);
+console.log(target);
+console.log(userAge === target);
+
+const a = { k: 123 };
+const b = { k: 123 };
+console.log(a === b);
