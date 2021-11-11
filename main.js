@@ -426,22 +426,56 @@ import random from "./getRandom";
 
 // console.log(numbers);
 
-const userAge = {
-  // key : value
-  name: "Heropy",
-  age: 85,
-};
+// const userAge = {
+//   // key : value
+//   name: "Heropy",
+//   age: 85,
+// };
 
-const userEmail = {
-  name: "Heropy",
+// const userEmail = {
+//   name: "Heropy",
+//   email: "hoon37388@naver.com",
+// };
+
+// const target = Object.assign({}, userAge, userEmail);
+// console.log(userAge);
+// console.log(target);
+// console.log(userAge === target);
+
+// const a = { k: 123 };
+// const b = { k: 123 };
+// console.log(a === b);
+
+// keys
+
+// const user = {
+//   name: "ruri",
+//   age: 85,
+//   email: "hoon37388@naver.com",
+// };
+
+// const keys = Object.keys(user);
+// console.log(keys);
+// // ['name', 'age', 'email']
+
+// console.log(user["email"]);
+
+// const values = keys.map((key) => user[key]);
+// console.log(values);
+
+// 구조 분해 할당
+// 비구조화 할당
+
+const user = {
+  name: "ruri",
+  age: 85,
   email: "hoon37388@naver.com",
 };
 
-const target = Object.assign({}, userAge, userEmail);
-console.log(userAge);
-console.log(target);
-console.log(userAge === target);
+const { name, age, email, address } = user;
+// E.g user.address
 
-const a = { k: 123 };
-const b = { k: 123 };
-console.log(a === b);
+console.log(`사용자의 이름은 ${name}입니다.`);
+console.log(`${name}의 나이는 ${age}세 입니다.`);
+console.log(`${name}의 이메일 주소는 ${email}입니다.`);
+console.log(address);
