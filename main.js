@@ -466,16 +466,35 @@ import random from "./getRandom";
 // 구조 분해 할당
 // 비구조화 할당
 
-const user = {
-  name: "ruri",
-  age: 85,
-  email: "hoon37388@naver.com",
-};
+// const user = {
+//   name: "ruri",
+//   age: 85,
+//   email: "hoon37388@naver.com",
+//   address: "USA",
+// };
 
-const { name, age, email, address } = user;
-// E.g user.address
+// const { name: ruri, age, email, address = "Korea" } = user;
+// // E.g, user.address
 
-console.log(`사용자의 이름은 ${name}입니다.`);
-console.log(`${name}의 나이는 ${age}세 입니다.`);
-console.log(`${name}의 이메일 주소는 ${email}입니다.`);
-console.log(address);
+// console.log(`사용자의 이름은 ${ruri}입니다.`);
+// console.log(`${ruri}의 나이는 ${age}세 입니다.`);
+// console.log(`${ruri}의 이메일 주소는 ${email}입니다.`);
+// console.log(address);
+
+// const fruits = ["Apple", "Banana", "Cherry"];
+// const [a, b, c, d] = fruits;
+// console.log(a, b, c, d);
+
+const fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits);
+console.log(...fruits);
+// console.log("Apple", "Banana", "Cherry")
+
+function toObject(a, b, c) {
+  return {
+    a: a,
+    b: b,
+    c: c,
+  };
+}
+console.log(toObject(...fruits));
