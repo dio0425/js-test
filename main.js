@@ -498,3 +498,7 @@ function toObject(a, b, c) {
   };
 }
 console.log(toObject(...fruits));
+
+// 데이터 불변성
+// 원시 데이터: String, Number, Boolean, undefined, null
+// 참조형 데이터: Object, Array, Function
